@@ -21,5 +21,5 @@ Route::get('/', function () {
 Route::get('/users', 'UserController@index');
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
-    Route::get('/users', 'UserController@get');
+    Route::get('/users', 'UserController@index');
 });
